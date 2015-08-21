@@ -38,6 +38,7 @@
             this.saveBtn = new System.Windows.Forms.Button();
             this.maxRunDurationTxt = new System.Windows.Forms.TextBox();
             this.maxRunDurationLbl = new System.Windows.Forms.Label();
+            this.rubiesChk = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // loggingChk
@@ -62,7 +63,7 @@
             // 
             // dogcogTxt
             // 
-            this.dogcogTxt.Location = new System.Drawing.Point(12, 104);
+            this.dogcogTxt.Location = new System.Drawing.Point(12, 145);
             this.dogcogTxt.Name = "dogcogTxt";
             this.dogcogTxt.Size = new System.Drawing.Size(20, 20);
             this.dogcogTxt.TabIndex = 27;
@@ -70,7 +71,7 @@
             // dogcogLbl
             // 
             this.dogcogLbl.AutoSize = true;
-            this.dogcogLbl.Location = new System.Drawing.Point(34, 107);
+            this.dogcogLbl.Location = new System.Drawing.Point(34, 148);
             this.dogcogLbl.Name = "dogcogLbl";
             this.dogcogLbl.Size = new System.Drawing.Size(70, 13);
             this.dogcogLbl.TabIndex = 26;
@@ -99,7 +100,7 @@
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(45, 157);
+            this.saveBtn.Location = new System.Drawing.Point(45, 198);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(75, 23);
             this.saveBtn.TabIndex = 32;
@@ -109,7 +110,7 @@
             // 
             // maxRunDurationTxt
             // 
-            this.maxRunDurationTxt.Location = new System.Drawing.Point(12, 130);
+            this.maxRunDurationTxt.Location = new System.Drawing.Point(12, 171);
             this.maxRunDurationTxt.Name = "maxRunDurationTxt";
             this.maxRunDurationTxt.Size = new System.Drawing.Size(20, 20);
             this.maxRunDurationTxt.TabIndex = 34;
@@ -117,22 +118,33 @@
             // maxRunDurationLbl
             // 
             this.maxRunDurationLbl.AutoSize = true;
-            this.maxRunDurationLbl.Location = new System.Drawing.Point(34, 133);
+            this.maxRunDurationLbl.Location = new System.Drawing.Point(34, 174);
             this.maxRunDurationLbl.Name = "maxRunDurationLbl";
             this.maxRunDurationLbl.Size = new System.Drawing.Size(86, 13);
             this.maxRunDurationLbl.TabIndex = 33;
             this.maxRunDurationLbl.Text = "Max run duration";
             // 
+            // rubiesChk
+            // 
+            this.rubiesChk.AutoSize = true;
+            this.rubiesChk.Location = new System.Drawing.Point(12, 104);
+            this.rubiesChk.Name = "rubiesChk";
+            this.rubiesChk.Size = new System.Drawing.Size(112, 17);
+            this.rubiesChk.TabIndex = 29;
+            this.rubiesChk.Text = "Blindly click rubies";
+            this.rubiesChk.UseVisualStyleBackColor = true;
+            // 
             // OtherSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(167, 189);
+            this.ClientSize = new System.Drawing.Size(167, 231);
             this.Controls.Add(this.maxRunDurationTxt);
             this.Controls.Add(this.maxRunDurationLbl);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.tasklistChk);
             this.Controls.Add(this.skillChk);
+            this.Controls.Add(this.rubiesChk);
             this.Controls.Add(this.loggingChk);
             this.Controls.Add(this.clickingChk);
             this.Controls.Add(this.dogcogTxt);
@@ -161,5 +173,6 @@
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.TextBox maxRunDurationTxt;
         private System.Windows.Forms.Label maxRunDurationLbl;
+        private System.Windows.Forms.CheckBox rubiesChk;
     }
 }
