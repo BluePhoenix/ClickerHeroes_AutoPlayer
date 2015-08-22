@@ -288,7 +288,7 @@ namespace clickerheroes.autoplayer
         {
             Debug.Assert(CachedHeroLevelData != null);
 
-            if (heroLevel > 0)
+            if (heroLevel >= 0)
             {
                 CachedHeroLevelData[heroID] = heroLevel;
             }
