@@ -553,7 +553,10 @@ namespace clickerheroes.autoplayer
                 Point[] pts = GameEngine.GetCandyButtons();
                 foreach (Point p in pts)
                 {
-                    AddAction(new Action(p, Modifiers.NONE));
+                    if (Properties.Settings.Default.rubies)
+                    {
+                        AddAction(new Action(p, Modifiers.NONE));
+                    }
                 }
 
                 maxEndTime = DateTime.Now.AddMinutes(Properties.Settings.Default.maxRunDuration);

@@ -23,6 +23,7 @@ namespace clickerheroes.autoplayer
             skillChk.Checked = Properties.Settings.Default.autoSkill;
             clickingChk.Checked = Properties.Settings.Default.autoClicking;
             loggingChk.Checked = Properties.Settings.Default.logging;
+            rubiesChk.Checked = Properties.Settings.Default.rubies;
             dogcogTxt.Text = Properties.Settings.Default.dogcog.ToString();
             maxRunDurationTxt.Text = Properties.Settings.Default.maxRunDuration.ToString();
             maxRunDurationTxt.Enabled = Properties.Settings.Default.useTaskList;
@@ -60,6 +61,7 @@ namespace clickerheroes.autoplayer
             Properties.Settings.Default.autoSkill = skillChk.Checked;
             Properties.Settings.Default.autoClicking = clickingChk.Checked;
             Properties.Settings.Default.logging = loggingChk.Checked;
+            Properties.Settings.Default.rubies = rubiesChk.Checked;
             Properties.Settings.Default.Save();
         }
 
@@ -67,6 +69,5 @@ namespace clickerheroes.autoplayer
         {
             maxRunDurationTxt.Enabled = !maxRunDurationTxt.Enabled;
         }
-
     }
 }
